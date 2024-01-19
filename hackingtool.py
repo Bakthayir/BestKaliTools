@@ -89,7 +89,7 @@ if __name__ == "__main__":
                         f.write(inpath)
                     print(f"Successfully Set Path to: {inpath}")
                 elif choice == "2":
-                    autopath = "/home/hackingtool/"
+                    autopath = "/home/BestKaliTools/"
                     with open(fpath, "w") as f:
                         f.write(autopath)
                     print(f"Your Default Path Is: {autopath}")
