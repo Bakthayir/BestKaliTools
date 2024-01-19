@@ -33,7 +33,7 @@ echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
 echo -e "${WHITE}              [0] Exit "
 echo -n -e "IamHack3r >> "
 read choice
-INSTALL_DIR="/usr/share/doc/hackingtool"
+INSTALL_DIR="/usr/share/doc/BestKaliTools"
 BIN_DIR="/usr/bin/"
 if [ $choice == 1 ]; then 
 	echo "[*] Checking Internet Connection .."
@@ -44,7 +44,7 @@ if [ $choice == 1 ]; then
 	    sudo apt-get install python-pip
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
-	        echo "[!] A Directory hackingtool Was Found.. Do You Want To Replace It ? [y/n]:" ;
+	        echo "[!] A Directory BestKaliTools Was Found.. Do You Want To Replace It ? [y/n]:" ;
 	        read input
 	        if [ "$input" = "y" ]; then
 	            rm -R "$INSTALL_DIR"
