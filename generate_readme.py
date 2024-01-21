@@ -1,8 +1,8 @@
 # coding=utf-8
 import re
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestkaliTools
+from core import BestkaliToolssCollection
 from main import all_tools
 
 
@@ -13,7 +13,7 @@ def sanitize_anchor(s):
 def get_toc(tools, indentation = ""):
     md = ""
     for tool in tools:
-        if isinstance(tool, HackingToolsCollection):
+        if isinstance(tool, BestkaliToolssCollection):
             md += (indentation + "- [{}](#{})\n".format(
                 tool.TITLE, sanitize_anchor(tool.TITLE)))
             md += get_toc(tool.TOOLS, indentation = indentation + '    ')
@@ -23,10 +23,10 @@ def get_toc(tools, indentation = ""):
 def get_tools_toc(tools, indentation = "##"):
     md = ""
     for tool in tools:
-        if isinstance(tool, HackingToolsCollection):
+        if isinstance(tool, BestkaliToolssCollection):
             md += (indentation + "# {}\n".format(tool.TITLE))
             md += get_tools_toc(tool.TOOLS, indentation = indentation + '#')
-        elif isinstance(tool, HackingTool):
+        elif isinstance(tool, BestkaliTools):
             if tool.PROJECT_URL:
                 md += ("- [{}]({})\n".format(tool.TITLE, tool.PROJECT_URL))
             else:
