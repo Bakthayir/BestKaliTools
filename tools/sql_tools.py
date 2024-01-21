@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class Sqlmap(HackingTool):
+class Sqlmap(BestKaliTools):
     TITLE = "Sqlmap tool"
     DESCRIPTION = "sqlmap is an open source penetration testing tool that " \
                   "automates the process of \n" \
@@ -16,7 +16,7 @@ class Sqlmap(HackingTool):
     RUN_COMMANDS = ["cd sqlmap-dev;python3 sqlmap.py --wizard"]
     PROJECT_URL = "https://github.com/sqlmapproject/sqlmap"
 
-class NoSqlMap(HackingTool):
+class NoSqlMap(BestKaliTools):
     TITLE = "NoSqlMap"
     DESCRIPTION = "NoSQLMap is an open source Python tool designed to \n " \
                   "audit for as well as automate injection attacks and exploit.\n " \
@@ -30,7 +30,7 @@ class NoSqlMap(HackingTool):
     PROJECT_URL = "https://github.com/codingo/NoSQLMap"
 
 
-class SQLiScanner(HackingTool):
+class SQLiScanner(BestKaliTools):
     TITLE = "Damn Small SQLi Scanner"
     DESCRIPTION = "Damn Small SQLi Scanner (DSSS) is a fully functional SQL " \
                   "injection\nvulnerability scanner also supporting GET and " \
@@ -43,7 +43,7 @@ class SQLiScanner(HackingTool):
         super(SQLiScanner, self).__init__(runnable = False)
 
 
-class Explo(HackingTool):
+class Explo(BestKaliTools):
     TITLE = "Explo"
     DESCRIPTION = "Explo is a simple tool to describe web security issues " \
                   "in a human and machine readable format.\n " \
@@ -60,7 +60,7 @@ class Explo(HackingTool):
         super(Explo, self).__init__(runnable = False)
 
 
-class Blisqy(HackingTool):
+class Blisqy(BestKaliTools):
     TITLE = "Blisqy - Exploit Time-based blind-SQL injection"
     DESCRIPTION = "Blisqy is a tool to aid Web Security researchers to find " \
                   "Time-based Blind SQL injection \n on HTTP Headers and also " \
@@ -73,7 +73,7 @@ class Blisqy(HackingTool):
         super(Blisqy, self).__init__(runnable = False)
 
 
-class Leviathan(HackingTool):
+class Leviathan(BestKaliTools):
     TITLE = "Leviathan - Wide Range Mass Audit Toolkit"
     DESCRIPTION = "Leviathan is a mass audit toolkit which has wide range " \
                   "service discovery,\nbrute force, SQL injection detection " \
@@ -88,7 +88,7 @@ class Leviathan(HackingTool):
     PROJECT_URL = "https://github.com/leviathan-framework/leviathan"
 
 
-class SQLScan(HackingTool):
+class SQLScan(BestKaliTools):
     TITLE = "SQLScan"
     DESCRIPTION = "sqlscan is quick web scanner for find an sql inject point." \
                   " not for educational, this is for hacking."
@@ -101,7 +101,7 @@ class SQLScan(HackingTool):
     PROJECT_URL = "https://github.com/Cvar1984/sqlscan"
 
 
-class SqlInjectionTools(HackingToolsCollection):
+class SqlInjectionTools(BestKaliToolssCollection):
     TITLE = "SQL Injection Tools"
     TOOLS = [
         Sqlmap(),
