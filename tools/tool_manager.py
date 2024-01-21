@@ -2,18 +2,18 @@
 import os
 from time import sleep
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class UpdateTool(HackingTool):
+class UpdateTool(BestKaliTools):
     TITLE = "Update Tool or System"
     DESCRIPTION = "Update Tool or System"
 
     def __init__(self):
         super(UpdateTool, self).__init__([
             ("Update System", self.update_sys),
-            ("Update Hackingtool", self.update_ht)
+            ("Update BestKaliTools", self.update_ht)
         ], installable = False, runnable = False)
 
     def update_sys(self):
@@ -25,20 +25,20 @@ class UpdateTool(HackingTool):
     def update_ht(self):
         os.system("sudo chmod +x /etc/;"
                   "sudo chmod +x /usr/share/doc;"
-                  "sudo rm -rf /usr/share/doc/hackingtool/;"
+                  "sudo rm -rf /usr/share/doc/BestKaliTools/;"
                   "cd /etc/;"
-                  "sudo rm -rf /etc/hackingtool/;"
-                  "mkdir hackingtool;"
-                  "cd hackingtool;"
-                  "git clone https://github.com/Z4nzu/hackingtool.git;"
-                  "cd hackingtool;"
+                  "sudo rm -rf /etc/BestKaliTools/;"
+                  "mkdir BestKaliTools;"
+                  "cd BestKaliTools;"
+                  "git clone https://github.com/Z4nzu/BestKaliTools.git;"
+                  "cd BestKaliTools;"
                   "sudo chmod +x install.sh;"
                   "./install.sh")
 
 
-class UninstallTool(HackingTool):
-    TITLE = "Uninstall HackingTool"
-    DESCRIPTION = "Uninstall HackingTool"
+class UninstallTool(BestKaliTools):
+    TITLE = "Uninstall BestKaliTools"
+    DESCRIPTION = "Uninstall BestKaliTools"
 
     def __init__(self):
         super(UninstallTool, self).__init__([
@@ -46,20 +46,20 @@ class UninstallTool(HackingTool):
         ], installable = False, runnable = False)
 
     def uninstall(self):
-        print("hackingtool started to uninstall..\n")
+        print("BestKaliTools started to uninstall..\n")
         sleep(1)
         os.system("sudo chmod +x /etc/;"
                   "sudo chmod +x /usr/share/doc;"
-                  "sudo rm -rf /usr/share/doc/hackingtool/;"
+                  "sudo rm -rf /usr/share/doc/BestKaliTools/;"
                   "cd /etc/;"
-                  "sudo rm -rf /etc/hackingtool/;")
-        print("\nHackingtool Successfully Uninstalled..")
+                  "sudo rm -rf /etc/BestKaliTools/;")
+        print("\nBestKaliTools Successfully Uninstalled..")
         print("Happy Hacking..!!")
         sleep(1)
 
 
-class ToolManager(HackingToolsCollection):
-    TITLE = "Update or Uninstall | Hackingtool"
+class ToolManager(BestKaliToolssCollection):
+    TITLE = "Update or Uninstall | BestKaliTools"
     TOOLS = [
         UpdateTool(),
         UninstallTool()
