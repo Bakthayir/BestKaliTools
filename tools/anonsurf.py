@@ -1,11 +1,11 @@
 # coding=utf-8
 import os
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class AnonymouslySurf(HackingTool):
+class AnonymouslySurf(BestKaliTools):
     TITLE = "Anonymously Surf"
     DESCRIPTION = "It automatically overwrites the RAM when\n" \
                   "the system is shutting down and also change Ip."
@@ -23,7 +23,7 @@ class AnonymouslySurf(HackingTool):
         os.system("sudo anonsurf stop")
 
 
-class Multitor(HackingTool):
+class Multitor(BestKaliTools):
     TITLE = "Multitor"
     DESCRIPTION = "How to stay in multi places at the same time"
     INSTALL_COMMANDS = [
@@ -37,7 +37,7 @@ class Multitor(HackingTool):
         super(Multitor, self).__init__(runnable = False)
 
 
-class AnonSurfTools(HackingToolsCollection):
+class AnonSurfTools(BestKaliToolssCollection):
     TITLE = "Anonymously Hiding Tools"
     DESCRIPTION = ""
     TOOLS = [
