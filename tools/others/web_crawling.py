@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class GoSpider(HackingTool):
+class GoSpider(BestKaliTools):
     TITLE = "Gospider"
     DESCRIPTION = "Gospider - Fast web spider written in Go"
     INSTALL_COMMANDS = ["sudo go get -u github.com/jaeles-project/gospider"]
@@ -13,6 +13,6 @@ class GoSpider(HackingTool):
         super(GoSpider, self).__init__(runnable = False)
 
 
-class WebCrawlingTools(HackingToolsCollection):
+class WebCrawlingTools(BestKaliToolssCollection):
     TITLE = "Web crawling"
     TOOLS = [GoSpider()]
