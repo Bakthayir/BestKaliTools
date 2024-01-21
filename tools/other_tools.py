@@ -2,8 +2,8 @@
 import os
 import subprocess
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 from tools.others.android_attack import AndroidAttackTools
 from tools.others.email_verifier import EmailVerifyTools
 from tools.others.hash_crack import HashCrackingTools
@@ -16,7 +16,7 @@ from tools.others.web_crawling import WebCrawlingTools
 from tools.others.wifi_jamming import WifiJammingTools
 
 
-class HatCloud(HackingTool):
+class HatCloud(BestKaliTools):
     TITLE = "HatCloud(Bypass CloudFlare for IP)"
     DESCRIPTION = "HatCloud build in Ruby. It makes bypass in CloudFlare for " \
                   "discover real IP."
@@ -29,7 +29,7 @@ class HatCloud(HackingTool):
         subprocess.run(["sudo", "ruby", "hatcloud.rb", "-b", site])
 
 
-class OtherTools(HackingToolsCollection):
+class OtherTools(BestKaliToolssCollection):
     TITLE = "Other tools"
     TOOLS = [
         SocialMediaBruteforceTools(),
