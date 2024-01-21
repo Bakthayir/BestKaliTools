@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class KnockMail(HackingTool):
+class KnockMail(BestKaliTools):
     TITLE = "Knockmail"
     DESCRIPTION = "KnockMail Tool Verify If Email Exists"
     INSTALL_COMMANDS = [
@@ -14,7 +14,7 @@ class KnockMail(HackingTool):
     PROJECT_URL = "https://github.com/heywoodlh/KnockMail"
 
 
-class EmailVerifyTools(HackingToolsCollection):
+class EmailVerifyTools(BestKaliToolssCollection):
     TITLE = "Email Verify tools"
     TOOLS = [KnockMail()]
     
