@@ -1,11 +1,11 @@
 # coding=utf-8
 import subprocess
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class AndroGuard(HackingTool):
+class AndroGuard(BestKaliTools):
     TITLE = "Androguard"
     DESCRIPTION = "Androguard is a Reverse engineering, Malware and goodware " \
                   "analysis of Android applications and more"
@@ -16,7 +16,7 @@ class AndroGuard(HackingTool):
         super(AndroGuard, self).__init__(runnable = False)
 
 
-class Apk2Gold(HackingTool):
+class Apk2Gold(BestKaliTools):
     TITLE = "Apk2Gold"
     DESCRIPTION = "Apk2Gold is a CLI tool for decompiling Android apps to Java"
     INSTALL_COMMANDS = [
@@ -30,7 +30,7 @@ class Apk2Gold(HackingTool):
         subprocess.run(["sudo", "apk2gold", uinput])
 
 
-class Jadx(HackingTool):
+class Jadx(BestKaliTools):
     TITLE = "JadX"
     DESCRIPTION = "Jadx is Dex to Java decompiler.\n" \
                   "[*] decompile Dalvik bytecode to java classes from APK, dex," \
@@ -47,7 +47,7 @@ class Jadx(HackingTool):
         super(Jadx, self).__init__(runnable = False)
 
 
-class ReverseEngineeringTools(HackingToolsCollection):
+class ReverseEngineeringTools(BestKaliToolssCollection):
     TITLE = "Reverse engineering tools"
     TOOLS = [
         AndroGuard(),
