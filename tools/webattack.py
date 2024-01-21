@@ -1,11 +1,11 @@
 # coding=utf-8
 import subprocess
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class Web2Attack(HackingTool):
+class Web2Attack(BestKaliTools):
     TITLE = "Web2Attack"
     DESCRIPTION = "Web hacking framework with tools, exploits by python"
     INSTALL_COMMANDS = [
@@ -14,7 +14,7 @@ class Web2Attack(HackingTool):
     PROJECT_URL = "https://github.com/santatic/web2attack"
 
 
-class Skipfish(HackingTool):
+class Skipfish(BestKaliTools):
     TITLE = "Skipfish"
     DESCRIPTION = "Skipfish – Fully automated, active web application " \
                   "security reconnaissance tool \n " \
@@ -28,7 +28,7 @@ class Skipfish(HackingTool):
         super(Skipfish, self).__init__(installable = False)
 
 
-class SubDomainFinder(HackingTool):
+class SubDomainFinder(BestKaliTools):
     TITLE = "SubDomain Finder"
     DESCRIPTION = "Sublist3r is a python tool designed to enumerate " \
                   "subdomains of websites using OSINT \n " \
@@ -44,7 +44,7 @@ class SubDomainFinder(HackingTool):
     PROJECT_URL = "https://github.com/aboul3la/Sublist3r"
 
 
-class CheckURL(HackingTool):
+class CheckURL(BestKaliTools):
     TITLE = "CheckURL"
     DESCRIPTION = "Detect evil urls that uses IDN Homograph Attack.\n\t" \
                   "[!] python3 checkURL.py --url google.com"
@@ -54,7 +54,7 @@ class CheckURL(HackingTool):
     PROJECT_URL = "https://github.com/UndeadSec/checkURL"
 
 
-class Blazy(HackingTool):
+class Blazy(BestKaliTools):
     TITLE = "Blazy(Also Find ClickJacking)"
     DESCRIPTION = "Blazy is a modern login page bruteforcer"
     INSTALL_COMMANDS = [
@@ -65,7 +65,7 @@ class Blazy(HackingTool):
     PROJECT_URL = "https://github.com/UltimateHackers/Blazy"
 
 
-class SubDomainTakeOver(HackingTool):
+class SubDomainTakeOver(BestKaliTools):
     TITLE = "Sub-Domain TakeOver"
     DESCRIPTION = "Sub-domain takeover vulnerability occur when a sub-domain " \
                   "\n (subdomain.example.com) is pointing to a service " \
@@ -81,7 +81,7 @@ class SubDomainTakeOver(HackingTool):
     def __init__(self):
         super(SubDomainTakeOver, self).__init__(runnable = False)
 
-class Dirb(HackingTool):
+class Dirb(BestKaliTools):
     TITLE = "Dirb"
     DESCRIPTION = "DIRB is a Web Content Scanner. It looks for existing " \
                   "(and/or hidden) Web Objects.\n" \
@@ -98,7 +98,7 @@ class Dirb(HackingTool):
         subprocess.run(["sudo", "dirb", uinput])
 
 
-class WebAttackTools(HackingToolsCollection):
+class WebAttackTools(BestKaliToolssCollection):
     TITLE = "Web Attack tools"
     DESCRIPTION = ""
     TOOLS = [
