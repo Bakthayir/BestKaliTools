@@ -1,11 +1,11 @@
 # coding=utf-8
 import os
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class Setoolkit(HackingTool):
+class Setoolkit(BestKaliTools):
     TITLE = "Setoolkit"
     DESCRIPTION = "The Social-Engineer Toolkit is an open-source penetration\n" \
                   "testing framework designed for social engineering"
@@ -17,7 +17,7 @@ class Setoolkit(HackingTool):
     PROJECT_URL = "https://github.com/trustedsec/social-engineer-toolkit"
 
 
-class SocialFish(HackingTool):
+class SocialFish(BestKaliTools):
     TITLE = "SocialFish"
     DESCRIPTION = "Automated Phishing Tool & Information Collector NOTE: username is 'root' and password is 'pass'"
     INSTALL_COMMANDS = [
@@ -28,7 +28,7 @@ class SocialFish(HackingTool):
     PROJECT_URL = "https://github.com/UndeadSec/SocialFish"
 
 
-class HiddenEye(HackingTool):
+class HiddenEye(BestKaliTools):
     TITLE = "HiddenEye"
     DESCRIPTION = "Modern Phishing Tool With Advanced Functionality And " \
                   "Multiple Tunnelling Services \n" \
@@ -41,7 +41,7 @@ class HiddenEye(HackingTool):
     PROJECT_URL = "https://github.com/DarkSecDevelopers/HiddenEye"
 
 
-class Evilginx2(HackingTool):
+class Evilginx2(BestKaliTools):
     TITLE = "Evilginx2"
     DESCRIPTION = "evilginx2 is a man-in-the-middle attack framework used " \
                   "for phishing login credentials along with session cookies,\n" \
@@ -60,7 +60,7 @@ class Evilginx2(HackingTool):
     PROJECT_URL = "https://github.com/kgretzky/evilginx2"
 
 
-class ISeeYou(HackingTool):
+class ISeeYou(BestKaliTools):
     TITLE = "I-See_You(Get Location using phishing attack)"
     DESCRIPTION = "[!] ISeeYou is a tool to find Exact Location of Victom By" \
                   " User SocialEngineering or Phishing Engagment..\n" \
@@ -74,7 +74,7 @@ class ISeeYou(HackingTool):
     PROJECT_URL = "https://github.com/Viralmaniar/I-See-You"
 
 
-class SayCheese(HackingTool):
+class SayCheese(BestKaliTools):
     TITLE = "SayCheese (Grab target's Webcam Shots)"
     DESCRIPTION = "Take webcam shots from target just sending a malicious link"
     INSTALL_COMMANDS = ["sudo git clone https://github.com/hangetzzu/saycheese"]
@@ -82,7 +82,7 @@ class SayCheese(HackingTool):
     PROJECT_URL = "https://github.com/hangetzzu/saycheese"
 
 
-class QRJacking(HackingTool):
+class QRJacking(BestKaliTools):
     TITLE = "QR Code Jacking"
     DESCRIPTION = "QR Code Jacking (Any Website)"
     INSTALL_COMMANDS = [
@@ -91,7 +91,7 @@ class QRJacking(HackingTool):
     PROJECT_URL = "https://github.com/cryptedwolf/ohmyqr"
 
 
-class ShellPhish(HackingTool):
+class ShellPhish(BestKaliTools):
     TITLE = "ShellPhish"
     DESCRIPTION = "Fhishing Tool for 18 social media"
     INSTALL_COMMANDS = ["git clone https://github.com/An0nUD4Y/shellphish.git"]
@@ -99,7 +99,7 @@ class ShellPhish(HackingTool):
     PROJECT_URL = "https://github.com/An0nUD4Y/shellphish"
 
 
-class BlackPhish(HackingTool):
+class BlackPhish(BestKaliTools):
     TITLE = "BlackPhish"
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/iinc0gnit0/BlackPhish.git",
@@ -115,7 +115,7 @@ class BlackPhish(HackingTool):
         os.system("cd BlackPhish;sudo bash update.sh")
 
 
-class PhishingAttackTools(HackingToolsCollection):
+class PhishingAttackTools(BestKaliToolssCollection):
     TITLE = "Phishing attack tools"
     TOOLS = [
         Setoolkit(),
