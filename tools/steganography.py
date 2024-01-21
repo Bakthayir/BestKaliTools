@@ -1,12 +1,12 @@
 # coding=utf-8
 import subprocess
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 from core import validate_input
 
 
-class SteganoHide(HackingTool):
+class SteganoHide(BestKaliTools):
     TITLE = "SteganoHide"
     INSTALL_COMMANDS = ["sudo apt-get install steghide -y"]
 
@@ -35,7 +35,7 @@ class SteganoHide(HackingTool):
             subprocess.run(["steghide", "extract", "-sf", from_file])
 
 
-class StegnoCracker(HackingTool):
+class StegnoCracker(BestKaliTools):
     TITLE = "StegnoCracker"
     DESCRIPTION = "SteganoCracker is a tool that uncover hidden data inside " \
                   "files\n using brute-force utility"
@@ -48,7 +48,7 @@ class StegnoCracker(HackingTool):
         subprocess.run(["stegcracker", filename, passfile])
 
         
-class StegoCracker(HackingTool):
+class StegoCracker(BestKaliTools):
     TITLE = "StegoCracker"
     DESCRIPTION = "StegoCracker is a tool that let's you hide data into image or audio files and can retrieve from a file " 
                   
@@ -62,7 +62,7 @@ class StegoCracker(HackingTool):
     PROJECT_URL = "https://github.com/W1LDN16H7/StegoCracker"
     
 
-class Whitespace(HackingTool):
+class Whitespace(BestKaliTools):
     TITLE = "Whitespace"
     DESCRIPTION = "Use whitespace and unicode chars for steganography"
     INSTALL_COMMANDS = [
@@ -73,7 +73,7 @@ class Whitespace(HackingTool):
     PROJECT_URL = "https://github.com/beardog108/snow10"
 
 
-class SteganographyTools(HackingToolsCollection):
+class SteganographyTools(BestKaliToolssCollection):
     TITLE = "Steganograhy tools"
     TOOLS = [
         SteganoHide(),
