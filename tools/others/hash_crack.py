@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class HashBuster(HackingTool):
+class HashBuster(BestKaliTools):
     TITLE = "Hash Buster"
     DESCRIPTION = "Features: \n " \
                   "Automatic hash type identification \n " \
@@ -16,6 +16,6 @@ class HashBuster(HackingTool):
     PROJECT_URL = "https://github.com/s0md3v/Hash-Buster"
 
 
-class HashCrackingTools(HackingToolsCollection):
+class HashCrackingTools(BestKaliToolssCollection):
     TITLE = "Hash cracking tools"
     TOOLS = [HashBuster()]
