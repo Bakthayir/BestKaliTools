@@ -56,10 +56,10 @@ if [ $choice == 1 ]; then
 		echo "";
 		git clone https://github.com/Bakthayir/BestKaliTools.git "$INSTALL_DIR";
 		echo "#!/bin/bash
-		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
-		sudo chmod +x hackingtool;
-		sudo cp hackingtool /usr/bin/;
-		rm hackingtool;
+		python3 $INSTALL_DIR/BestKaliTools.py" '${1+"$@"}' > BestKaliTools;
+		sudo chmod +x BestKaliTools;
+		sudo cp BestKaliTools /usr/bin/;
+		rm BestKaliTools;
 		echo ""; 
 		echo "[✔] Trying to installing Requirements ..."
 		sudo pip3 install lolcat
@@ -79,7 +79,7 @@ if [ $choice == 1 ]; then
         echo "";
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
         echo 		"		[+]						      		[+]"
-        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (hackingtool) ✔✔✔ 	[+]"
+        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (BestKaliTools) ✔✔✔ 	[+]"
         echo 		"		[+]						      		[+]"
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
     else
