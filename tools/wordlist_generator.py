@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class Cupp(HackingTool):
+class Cupp(BestKaliTools):
     TITLE = "Cupp"
     DESCRIPTION = "WlCreator is a C program that can create all possibilities of passwords,\n " \
                   "and you can choose Length, Lowercase, Capital, Numbers and Special Chars"
@@ -12,7 +12,7 @@ class Cupp(HackingTool):
     PROJECT_URL = "https://github.com/Mebus/cupp"
 
 
-class WlCreator(HackingTool):
+class WlCreator(BestKaliTools):
     TITLE = "WordlistCreator"
     DESCRIPTION = "WlCreator is a C program that can create all possibilities" \
                   " of passwords,\n and you can choose Lenght, Lowercase, " \
@@ -23,7 +23,7 @@ class WlCreator(HackingTool):
     PROJECT_URL = "https://github.com/Z4nzu/wlcreator"
 
 
-class GoblinWordGenerator(HackingTool):
+class GoblinWordGenerator(BestKaliTools):
     TITLE = "Goblin WordGenerator"
     DESCRIPTION = "Goblin WordGenerator"
     INSTALL_COMMANDS = [
@@ -32,7 +32,7 @@ class GoblinWordGenerator(HackingTool):
     PROJECT_URL = "https://github.com/UndeadSec/GoblinWordGenerator.git"
 
 
-class showme(HackingTool):
+class showme(BestKaliTools):
     TITLE = "Password list (1.4 Billion Clear Text Password)"
     DESCRIPTION = "This tool allows you to perform OSINT and reconnaissance on " \
                   "an organisation or an individual. It allows one to search " \
@@ -47,7 +47,7 @@ class showme(HackingTool):
     PROJECT_URL = "https://github.com/Viralmaniar/SMWYG-Show-Me-What-You-Got"
 
 
-class WordlistGeneratorTools(HackingToolsCollection):
+class WordlistGeneratorTools(BestKaliToolssCollection):
     TITLE = "Wordlist Generator"
     TOOLS = [
         Cupp(),
