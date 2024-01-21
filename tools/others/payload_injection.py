@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class DebInject(HackingTool):
+class DebInject(BestKaliTools):
     TITLE = "Debinject"
     DESCRIPTION = "Debinject is a tool that inject malicious code into *.debs"
     INSTALL_COMMANDS = [
@@ -12,7 +12,7 @@ class DebInject(HackingTool):
     PROJECT_URL = "https://github.com/UndeadSec/Debinject"
 
 
-class Pixload(HackingTool):
+class Pixload(BestKaliTools):
     TITLE = "Pixload"
     DESCRIPTION = "Pixload -- Image Payload Creating tools \n " \
                   "Pixload is Set of tools for creating/injecting payload into images."
@@ -29,7 +29,7 @@ class Pixload(HackingTool):
         super(Pixload, self).__init__(runnable = False)
 
 
-class PayloadInjectorTools(HackingToolsCollection):
+class PayloadInjectorTools(BestKaliToolssCollection):
     TITLE = "Payload Injector"
     TOOLS = [
         DebInject(),
