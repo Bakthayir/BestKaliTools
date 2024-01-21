@@ -28,8 +28,8 @@ def validate_input(ip, val_range):
         return None
 
 
-class HackingTool(object):
-    # About the HackingTool
+class BestKaliTools(object):
+    # About the BestKaliTools
     TITLE: str = ""  # used to show info in the menu
     DESCRIPTION: str = ""
 
@@ -143,10 +143,10 @@ class HackingTool(object):
         webbrowser.open_new_tab(self.PROJECT_URL)
 
 
-class HackingToolsCollection(object):
+class BestKaliToolssCollection(object):
     TITLE: str = ""  # used to show info in the menu
     DESCRIPTION: str = ""
-    TOOLS = []  # type: List[Any[HackingTool, HackingToolsCollection]]
+    TOOLS = []  # type: List[Any[BestKaliTools, BestKaliToolssCollection]]
 
     def __init__(self):
         pass
