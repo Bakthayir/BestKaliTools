@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class Stitch(HackingTool):
+class Stitch(BestKaliTools):
     TITLE = "Stitch"
     DESCRIPTION = "Stitch is a cross platform python framework.\n" \
                   "which allows you to build custom payloads\n" \
@@ -16,7 +16,7 @@ class Stitch(HackingTool):
     PROJECT_URL = "https://github.com/nathanlopez/Stitch"
 
 
-class Pyshell(HackingTool):
+class Pyshell(BestKaliTools):
     TITLE = "Pyshell"
     DESCRIPTION = "Pyshell is a Rat Tool that can be able to download & upload " \
                   "files,\n Execute OS Command and more.."
@@ -28,7 +28,7 @@ class Pyshell(HackingTool):
     PROJECT_URL = "https://github.com/knassar702/pyshell"
 
 
-class RemoteAdministrationTools(HackingToolsCollection):
+class RemoteAdministrationTools(BestKaliToolssCollection):
     TITLE = "Remote Administrator Tools (RAT)"
     TOOLS = [
         Stitch(),
