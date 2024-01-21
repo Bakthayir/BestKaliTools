@@ -8,7 +8,7 @@ sudo chmod +x /usr/share/doc
 
 clear
 
-sudo rm -rf /usr/share/doc/hackingtool/
+sudo rm -rf /usr/share/doc/BestKaliTools/
 
 clear
 
@@ -16,23 +16,23 @@ cd /etc/
 
 clear
 
-sudo rm -rf /etc/hackingtool
+sudo rm -rf /etc/BestKaliTools
 
 clear
 
-mkdir hackingtool
+mkdir BestKaliTools
 
 clear
 
-cd hackingtool
+cd BestKaliTools
 
 clear
 
-git clone https://github.com/Z4nzu/hackingtool.git
+git clone https://github.com/Bakthayir/BestKaliTools.git
 
 clear
 
-cd hackingtool
+cd BestKaliTools
 
 clear
 
