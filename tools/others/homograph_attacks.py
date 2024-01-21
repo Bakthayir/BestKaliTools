@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class EvilURL(HackingTool):
+class EvilURL(BestKaliTools):
     TITLE = "EvilURL"
     DESCRIPTION = "Generate unicode evil domains for IDN Homograph Attack " \
                   "and detect them."
@@ -12,6 +12,6 @@ class EvilURL(HackingTool):
     PROJECT_URL = "https://github.com/UndeadSec/EvilURL"
 
 
-class IDNHomographAttackTools(HackingToolsCollection):
+class IDNHomographAttackTools(BestKaliToolssCollection):
     TITLE = "IDN Homograph Attack"
     TOOLS = [EvilURL()]
