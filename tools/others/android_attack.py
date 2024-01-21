@@ -1,9 +1,9 @@
 # coding=utf-8
-from core import HackingTool
-from core import HackingToolsCollection
+from core import BestKaliTools
+from core import BestKaliToolssCollection
 
 
-class Keydroid(HackingTool):
+class Keydroid(BestKaliTools):
     TITLE = "Keydroid"
     DESCRIPTION = "Android Keylogger + Reverse Shell\n" \
                   "[!] You have to install Some Manually Refer Below Link:\n " \
@@ -13,7 +13,7 @@ class Keydroid(HackingTool):
     PROJECT_URL = "https://github.com/F4dl0/keydroid"
 
 
-class MySMS(HackingTool):
+class MySMS(BestKaliTools):
     TITLE = "MySMS"
     DESCRIPTION = "Script that generates an Android App to hack SMS through WAN \n" \
                   "[!] You have to install Some Manually Refer Below Link:\n\t " \
@@ -24,7 +24,7 @@ class MySMS(HackingTool):
     PROJECT_URL = "https://github.com/papusingh2sms/mysms"
 
 
-class LockPhish(HackingTool):
+class LockPhish(BestKaliTools):
     TITLE = "Lockphish (Grab target LOCK PIN)"
     DESCRIPTION = "Lockphish it's the first tool for phishing attacks on the " \
                   "lock screen, designed to\n Grab Windows credentials,Android" \
@@ -35,7 +35,7 @@ class LockPhish(HackingTool):
     PROJECT_URL = "https://github.com/JasonJerry/lockphish"
 
 
-class Droidcam(HackingTool):
+class Droidcam(BestKaliTools):
     TITLE = "DroidCam (Capture Image)"
     DESCRIPTION = "Powerful Tool For Grab Front Camera Snap Using A Link"
     INSTALL_COMMANDS = [
@@ -46,7 +46,7 @@ class Droidcam(HackingTool):
     PROJECT_URL = "https://github.com/kinghacker0/WishFish"
 
 
-class EvilApp(HackingTool):
+class EvilApp(BestKaliTools):
     TITLE = "EvilApp (Hijack Session)"
     DESCRIPTION = "EvilApp is a script to generate Android App that can " \
                   "hijack authenticated sessions in cookies."
@@ -56,7 +56,7 @@ class EvilApp(HackingTool):
     PROJECT_URL = "https://github.com/crypticterminal/EvilApp"
 
 
-class AndroidAttackTools(HackingToolsCollection):
+class AndroidAttackTools(BestKaliToolssCollection):
     TITLE = "Android Hacking tools"
     TOOLS = [
         Keydroid(),
